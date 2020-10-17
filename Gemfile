@@ -5,6 +5,8 @@ ruby '2.5.7', :engine => "jruby", :engine_version => "9.2.13.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
+# Add boostrap
+gem 'bootstrap-sass', '~>3.3.6'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
