@@ -1,6 +1,9 @@
+puts "running static_pages_controller_test"
 require 'test_helper'
+puts "loaded test_helper"
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
+
   test "should get home" do
     get static_pages_home_url
     assert_response :success
@@ -16,13 +19,18 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get contact_me" do
-    get static_pages_contact_me_url
+  test "should get blog_posts" do
+    get static_pages_blog_posts_url
     assert_response :success
   end
 
-  test "should get blog_posts" do
-    get static_pages_blog_posts_url
+  test "should get ruby_gems" do
+    get static_pages_gems_url
+    assert_response :success
+  end
+  
+  test "should get contact_me" do
+    get static_pages_contact_me_url
     assert_response :success
   end
 
@@ -32,3 +40,4 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
 
 end
+
