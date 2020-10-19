@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'minitest-reporters', '~> 1.4.2'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
@@ -53,9 +54,8 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
-  # gem 'minitest-reporters', '~> 1.4.2'
-  # gem 'guard', '~> 2.16.2'
-  # gem 'guard-minitest', '~> 2.4.6'
+  gem 'guard', '~> 2.16.2'
+  gem 'guard-minitest', '~> 2.4.6'
 end
 
 group :production do
